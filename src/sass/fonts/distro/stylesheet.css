@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Distro';
+    src: url('Distro.eot');
+    src: url('Distro.eot?#iefix') format('embedded-opentype'),
+        url('Distro.woff2') format('woff2'),
+        url('Distro.woff') format('woff'),
+        url('Distro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Distro Bev';
+    src: url('DistroBev.eot');
+    src: url('DistroBev.eot?#iefix') format('embedded-opentype'),
+        url('DistroBev.woff2') format('woff2'),
+        url('DistroBev.woff') format('woff'),
+        url('DistroBev.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Distro Mix';
+    src: url('DistroMix.eot');
+    src: url('DistroMix.eot?#iefix') format('embedded-opentype'),
+        url('DistroMix.woff2') format('woff2'),
+        url('DistroMix.woff') format('woff'),
+        url('DistroMix.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Distro Extinct';
+    src: url('DistroExtinct.eot');
+    src: url('DistroExtinct.eot?#iefix') format('embedded-opentype'),
+        url('DistroExtinct.woff2') format('woff2'),
+        url('DistroExtinct.woff') format('woff'),
+        url('DistroExtinct.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Distro Vinyl';
+    src: url('DistroVinyl.eot');
+    src: url('DistroVinyl.eot?#iefix') format('embedded-opentype'),
+        url('DistroVinyl.woff2') format('woff2'),
+        url('DistroVinyl.woff') format('woff'),
+        url('DistroVinyl.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Distro';
+    src: url('DistroHeavy.eot');
+    src: url('DistroHeavy.eot?#iefix') format('embedded-opentype'),
+        url('DistroHeavy.woff2') format('woff2'),
+        url('DistroHeavy.woff') format('woff'),
+        url('DistroHeavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Distro Toast';
+    src: url('DistroToast.eot');
+    src: url('DistroToast.eot?#iefix') format('embedded-opentype'),
+        url('DistroToast.woff2') format('woff2'),
+        url('DistroToast.woff') format('woff'),
+        url('DistroToast.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Distro Bats';
+    src: url('DistroBats.eot');
+    src: url('DistroBats.eot?#iefix') format('embedded-opentype'),
+        url('DistroBats.woff2') format('woff2'),
+        url('DistroBats.woff') format('woff'),
+        url('DistroBats.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Distro';
+    src: url('Distro-Bold.eot');
+    src: url('Distro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Distro-Bold.woff2') format('woff2'),
+        url('Distro-Bold.woff') format('woff'),
+        url('Distro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Distro';
+    src: url('DistroLight.eot');
+    src: url('DistroLight.eot?#iefix') format('embedded-opentype'),
+        url('DistroLight.woff2') format('woff2'),
+        url('DistroLight.woff') format('woff'),
+        url('DistroLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Distro';
+    src: url('DistroBlack.eot');
+    src: url('DistroBlack.eot?#iefix') format('embedded-opentype'),
+        url('DistroBlack.woff2') format('woff2'),
+        url('DistroBlack.woff') format('woff'),
+        url('DistroBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
