@@ -1,0 +1,51 @@
+#cookie-notice {
+  position: fixed;
+  bottom: 28.204024rem;
+  right: 5%;
+  width: 658.093897rem;
+  height: auto;
+  background: #fff;
+  padding: 37.605366rem 28.204024rem;
+  box-shadow: 0 5.640805rem 11.28161rem rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 9999;
+  @include for-phone {
+    width: 90%;
+    padding: 150rem;
+  }
+  p {
+    font-size: 30.084292rem;
+    @include for-phone {
+      font-size: 160rem;
+    }
+    a {
+      color: $lblue;
+    }
+  }
+  .buttons-wrapper {
+    margin-top: 30.084292rem;
+    @include for-phone {
+      margin-top: 120rem;
+    }
+    a {
+      font-size: 26.323756rem;
+      font-weight: $medium;
+      @include for-phone {
+        font-size: 140rem;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+      &.accept {
+        color: $lblue;
+        margin-right: 26.323756rem;
+        @include for-phone {
+          margin-right: 180rem;
+        }
+      }
+      &.decline {
+        color: #ec2028;
+      }
+    }
+  }
+}

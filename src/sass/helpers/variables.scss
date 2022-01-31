@@ -1,0 +1,144 @@
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+$roboto: "Roboto", "Arial";
+
+// Colors
+$blue: #0c51a0;
+$dblue: #0f2765;
+$darkerBlue: #212e5a;
+$lblue: #37a5ff;
+$yellow: #ffd200;
+:root {
+  --side-padding: 351.610168rem;
+  @media (max-width: 768px) {
+    --side-padding: 200rem;
+  }
+}
+// Spaces
+$sidePadding: var(--side-padding);
+// responsive
+// $sidePadding: 160rem;
+
+// Custom classes
+.w-fit-content {
+  width: fit-content;
+  width: -moz-fit-content;
+}
+.w-100 {
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+.d-block {
+  display: block;
+}
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-start {
+  justify-content: flex-start;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-start {
+  align-items: flex-start;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.align-content-center {
+  align-content: center;
+}
+.flex-direction-col {
+  flex-direction: column;
+}
+.list-inline {
+  li {
+    display: inline-block;
+  }
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.ml-0 {
+  margin-left: 0 !important;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-0 {
+  padding: 0 !important;
+}
+.pr-0 {
+  padding-right: 0 !important;
+}
+.mr-a {
+  margin-right: auto;
+}
+.ml-a {
+  margin-left: auto;
+}
+.m-a {
+  margin: auto;
+}
+.pos {
+  &-r {
+    position: relative;
+  }
+  &-a {
+    position: absolute;
+  }
+}
+.full-size-img {
+  width: 100%;
+  height: 100%;
+
+  -o-object-position: center;
+  object-position: center;
+  &-contain {
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+  &-cover {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+.page-padding {
+  &-x {
+    padding-left: $sidePadding;
+    padding-right: $sidePadding;
+  }
+  &-y {
+    padding-top: 159.822804rem;
+    padding-bottom: 159.822804rem;
+  }
+}
+.heading {
+  font-weight: $bold;
+  font-size: 127.858243rem;
+  line-height: 1.2;
+  &-black {
+    color: #000;
+  }
+  @media (max-width: 500px) {
+    font-size: 360rem;
+  }
+}

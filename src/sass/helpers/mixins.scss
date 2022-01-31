@@ -1,0 +1,310 @@
+/* ====== MIXINS ====== */
+@mixin translate($a, $b) {
+  transform: translate($a, $b);
+  -moz-transform: translate($a, $b);
+  -webkit-transform: translate($a, $b);
+}
+
+@mixin stack() {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+@mixin abs-center() {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+@mixin hor-center() {
+  left: 50%;
+  transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+}
+
+@mixin ver-center() {
+  top: 50%;
+  transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -50%);
+}
+
+@mixin transform($t) {
+  transform: $t;
+  -moz-transform: $t;
+  -webkit-transform: $t;
+}
+
+@mixin scale($t) {
+  -webkit-backface-visibility: hidden;
+  -ms-transform: $t translateZ(0);
+  /* IE 9 */
+  -webkit-transform: $t translateZ(0);
+  /* Chrome, Safari, Opera */
+  transform: $t translateZ(0);
+}
+
+@mixin rm-transform() {
+  transform: none;
+  -moz-transform: none;
+  -webkit-transform: none;
+}
+
+@mixin box-shadow($t) {
+  -webkit-box-shadow: $t;
+  -moz-box-shadow: $t;
+  box-shadow: $t;
+}
+
+@mixin rm-transit() {
+  transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+}
+
+@mixin bg-props($size, $position, $repeat) {
+  background-size: $size;
+  background-position: $position;
+  background-repeat: $repeat;
+}
+
+@mixin transit($t, $t2: 0) {
+  @if ($t2 !=0) {
+    -webkit-transition: $t, $t2;
+    -moz-transition: $t, $t2;
+    -o-transition: $t, $t2;
+    transition: $t, $t2;
+  } @else {
+    -webkit-transition: $t;
+    -moz-transition: $t;
+    -o-transition: $t;
+    transition: $t;
+  }
+}
+
+@mixin setfont($fonttype) {
+  font-family: $fonttype;
+}
+
+@mixin flex($just, $alignc, $aligni, $dir, $wrap) {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  justify-content: $just;
+  -ms-justify-content: $just;
+  align-content: $alignc;
+  align-items: $aligni;
+  -ms-flex-align: $aligni;
+  flex-direction: $dir;
+  -ms-flex-direction: $dir;
+  flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+}
+
+@mixin input_placeholder(
+  $color,
+  $weight,
+  $size,
+  $transform,
+  $lheight,
+  $opacity,
+  $style
+) {
+  &::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    text-transform: $transform;
+    line-height: $lheight;
+    opacity: $opacity;
+    font-style: $style;
+  }
+
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    text-transform: $transform;
+    line-height: $lheight;
+    font-style: $style;
+  }
+
+  &:-ms-input-placeholder {
+    /* IE 10+ */
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    text-transform: $transform;
+    line-height: $lheight;
+    font-style: $style;
+  }
+
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    text-transform: $transform;
+    line-height: $lheight;
+    font-style: $style;
+  }
+}
+
+@mixin remove_appearance() {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+@mixin icon() {
+  display: inline-block;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin text($size: null, $lineHeight: null, $weight: null) {
+  @if $size !=null {
+    font-size: $size;
+  }
+
+  @if $lineHeight !=null {
+    line-height: $lineHeight;
+  }
+
+  @if $weight !=null {
+    font-weight: $weight;
+  }
+}
+
+@mixin verCenterHeight($he) {
+  height: $he;
+  line-height: $he;
+}
+
+// Browser Prefixes
+@mixin transformBrowser($transforms) {
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  transform: $transforms;
+}
+
+// Rotate
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+@mixin inputOrder($width, $height) {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 20px;
+  width: $width;
+  height: $height;
+  color: #5c5c5c;
+  @include boldFont();
+  font-size: 1.6rem;
+  padding: 5px 20px;
+  border: 1px solid #ededed;
+}
+
+@mixin borderRadius($r) {
+  border-radius: $r;
+  -moz-border-radius: $r;
+  -webkit-border-radius: $r;
+}
+@mixin gradient($color-backup, $start-color, $end-color, $angle, $start, $end) {
+  background: $color-backup !important;
+  background: -moz-linear-gradient(
+    $angle,
+    $start-color $start,
+    $end-color $end
+  ) !important;
+  background: -webkit-linear-gradient(
+    $angle,
+    $start-color $start,
+    $end-color $end
+  ) !important;
+  background: linear-gradient(
+    $angle,
+    $start-color $start,
+    $end-color $end
+  ) !important;
+}
+
+@mixin font($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file + ".eot");
+    src: url($font-file + ".eot?#iefix") format("embedded-opentype"),
+      url($font-file + ".woff") format("woff"),
+      url($font-file + ".woff2") format("woff2"),
+      url($font-file + ".ttf") format("truetype"),
+      url($font-file + ".svg#" + $font-family) format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@mixin fullSizeImg($f) {
+  width: 100%;
+  height: 100%;
+  object-fit: $f;
+  object-position: center;
+}
+
+@mixin for-phone-xs {
+  @media (max-width: 325px) {
+    @content;
+  }
+}
+@mixin for-phone {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+@mixin for-tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin for-tablet-xl {
+  @media (max-width: 980px) {
+    @content;
+  }
+}
+@mixin for-laptop {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin for-desktop {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+/* ====== / MIXINS ====== */

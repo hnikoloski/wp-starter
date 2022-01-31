@@ -1,14 +1,14 @@
 {
-  "name": "careerme",
+  "name": "starter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "development": "mix",
+    "dev": "mix",
     "watch": "mix watch",
     "watch-poll": "mix watch -- --watch-options-poll=1000",
     "hot": "mix watch --hot",
-    "production": "mix --production"
+    "prod": "mix --production"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +24,9 @@
     "webpack-livereload-plugin": "^1.2.0"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.11",
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@popperjs/core": "^2.9.2",
-    "bootstrap": "^5.0.2"
+    "waypoints": "^4.0.1"
   }
 }

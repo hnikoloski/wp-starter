@@ -1,0 +1,302 @@
+#gallery-slider {
+  position: relative;
+  .swiper-slide {
+    .content {
+      h3 {
+        min-height: 177rem;
+      }
+    }
+  }
+  @include for-phone {
+    padding-top: 990rem;
+    background: #0f2765;
+    background: linear-gradient(180deg, white 33.1%, #0f2765 33.1%);
+    .page-padding-x {
+      padding-left: 150.4215rem;
+      padding-right: 150.4215rem;
+    }
+    .swiper {
+      background: #08338e;
+      background: linear-gradient(180deg, white 29.61%, #08338e 29.61%);
+      padding-left: 110rem;
+      padding-right: 110rem;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 159.822804rem;
+    width: 139.139852rem;
+    height: 280.159973rem;
+    background: url("../../assets/icons/chevron-down-decoration.svg");
+    @include bg-props(cover, center, no-repeat);
+    @include for-phone {
+      width: 610rem;
+      height: 610rem;
+      top: 210rem;
+      background: url("../../assets/icons/wave-decoration.svg");
+      @include bg-props(contain, center, no-repeat);
+      left: -80rem;
+    }
+  }
+  header {
+    margin-bottom: 94.013414rem;
+    margin-top: 157.9425rem;
+    margin-bottom: 94.0134rem;
+    @include for-phone {
+      margin-top: 0;
+      .slider-buttons {
+        display: none;
+      }
+    }
+    h3 {
+      margin-bottom: 75.210731rem;
+      @include for-phone {
+        margin-bottom: 284rem;
+      }
+    }
+    p {
+      font-size: 37.605366rem;
+      @include for-phone {
+        font-size: 160rem;
+        margin-bottom: 440rem;
+      }
+    }
+    .btn {
+      &:first-of-type {
+        margin-right: 37.605366rem;
+      }
+    }
+  }
+  footer {
+    height: 889.3669rem;
+    margin-top: -592.2644rem;
+    padding-left: 150.4215rem;
+    padding-right: 150.4215rem;
+    background: $dblue;
+    @include for-phone {
+      margin-top: 0;
+    }
+    .wrapper {
+      margin-top: 120.3372rem;
+      background: #08338e;
+      padding-bottom: 182.386rem;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      align-content: flex-end;
+      position: relative;
+      @include for-phone {
+        margin-top: 0;
+        padding-bottom: 250rem;
+        margin-bottom: 0;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        @include hor-center();
+        background: #fff;
+        height: 5.6408rem;
+        width: 90%;
+        @include for-phone {
+          height: 20rem;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        right: -151rem;
+        top: -675rem;
+        width: 365.632193rem;
+        height: 676.89658rem;
+        background: url("../../assets/icons/decoration.svg");
+        @include bg-props(cover, center, no-repeat);
+        @include for-phone {
+          display: none;
+        }
+      }
+    }
+  }
+  @include for-phone {
+    .swiper-wrapper {
+      display: block;
+    }
+  }
+}
+#virtual-rooms {
+  padding-left: 150.4215rem;
+  padding-right: 150.4215rem;
+  background: rgb(15, 39, 101);
+  background: linear-gradient(
+    180deg,
+    rgba(15, 39, 101) 55.4%,
+    rgba(255, 255, 255, 1) 55.4%
+  );
+  position: relative;
+  @include for-phone {
+    background: linear-gradient(180deg, #0f2765 32.5%, white 32.5%);
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 510rem;
+    background: url("../../assets/icons/rooms-deco.svg");
+    @include bg-props(contain, center, no-repeat);
+    width: 263.6322rem;
+    height: 431.2644rem;
+    @include for-phone {
+      display: none;
+    }
+  }
+  .section-wrapper {
+    background: rgb(8, 51, 142);
+    background: linear-gradient(
+      180deg,
+      rgba(8, 51, 142, 1) 55.4%,
+      rgba(255, 255, 255, 1) 55.4%
+    );
+    header {
+      padding-top: 105.295rem;
+      padding-bottom: 118.4569rem;
+      text-align: center;
+      @include for-phone {
+        padding-top: 600rem;
+        padding-left: 110rem;
+        padding-right: 110rem;
+      }
+      .heading {
+        margin-bottom: 63.9291rem;
+        color: #fff;
+        @include for-phone {
+          margin-bottom: 400rem;
+        }
+      }
+      .subtitle {
+        color: #fff;
+        font-size: 37.6054rem;
+        @include for-phone {
+          font-size: 180rem;
+          font-weight: $regular;
+          margin-bottom: 360rem;
+        }
+      }
+    }
+    .cards-wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 0 39rem;
+      position: relative;
+      z-index: 999;
+      &::before {
+        content: "";
+        position: absolute;
+        left: -149rem;
+        top: 416rem;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 241rem 241rem 0;
+        border-color: transparent #ec2028 transparent transparent;
+        @include for-phone {
+          display: none;
+        }
+      }
+      @include for-phone {
+        background: linear-gradient(180deg, #08338e 16.5%, white 16.5%);
+      }
+      .card-room {
+        width: auto;
+        flex: 0 0 auto;
+        max-width: 30%;
+        @include for-phone {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+#share-ideas {
+  margin-top: 268.8784rem;
+  padding-left: 225.632193rem;
+  padding-right: 225.632193rem;
+  @include for-phone {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .container {
+    background: $yellow;
+    background-image: url("../../assets/img/ideas-bg.svg");
+    @include bg-props(100%, 0 100%, no-repeat);
+    min-height: 1156.365rem;
+    @include for-phone {
+      min-height: auto;
+      padding-top: 1270rem;
+      padding-bottom: 3210rem;
+      @include bg-props(250%, 100% 100%, no-repeat);
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 300rem;
+        background: url("../../assets/icons/white-wave-decoration.svg");
+        @include bg-props(cover, center, no-repeat);
+        width: 1000rem;
+        height: 1000rem;
+      }
+    }
+    .col {
+      padding: 223.7519rem 0 174.8649rem 293.3219rem;
+      max-width: 60%;
+      @include for-phone {
+        max-width: 100%;
+        padding: 223.7519rem 174.8649rem;
+      }
+      h3 {
+        font-size: 127.8582rem;
+        color: #000;
+        font-weight: $bold;
+        padding: 47.0067rem 56.408rem;
+        background: #fff;
+        width: fit-content;
+        line-height: 1;
+        width: -moz-fit-content;
+        margin-bottom: 120.3372rem;
+        @include for-phone {
+          font-size: 360rem;
+          margin-bottom: 270rem;
+        }
+      }
+      p {
+        font-size: 37.6054rem;
+        @include for-phone {
+          font-size: 160rem;
+        }
+        &:not(:last-of-type) {
+          margin-bottom: 65.8094rem;
+          @include for-phone {
+            margin-bottom: 160rem;
+          }
+        }
+        &:last-of-type {
+          margin-bottom: 112.8161rem;
+          @include for-phone {
+            margin-bottom: 250rem;
+          }
+        }
+      }
+    }
+  }
+}
+body.home {
+  #page {
+    transition: padding 0s;
+  }
+}
