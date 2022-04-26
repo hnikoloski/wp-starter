@@ -24,9 +24,6 @@
     "webpack-livereload-plugin": "^1.2.0"
   },
   "dependencies": {
-    "@fancyapps/ui": "^4.0.11",
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "@popperjs/core": "^2.9.2",
-    "waypoints": "^4.0.1"
+    "@popperjs/core": "^2.9.2"
   }
 }

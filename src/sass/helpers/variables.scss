@@ -3,7 +3,7 @@ $regular: 400;
 $medium: 500;
 $semiBold: 600;
 $bold: 700;
-$roboto: "Roboto", "Arial";
+$roboto: "Roboto", "Arial", sans-serif;
 
 // Colors
 $blue: #0c51a0;
@@ -68,11 +68,6 @@ $sidePadding: var(--side-padding);
 .flex-direction-col {
   flex-direction: column;
 }
-.list-inline {
-  li {
-    display: inline-block;
-  }
-}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -129,16 +124,5 @@ $sidePadding: var(--side-padding);
   &-y {
     padding-top: 159.822804rem;
     padding-bottom: 159.822804rem;
-  }
-}
-.heading {
-  font-weight: $bold;
-  font-size: 127.858243rem;
-  line-height: 1.2;
-  &-black {
-    color: #000;
-  }
-  @media (max-width: 500px) {
-    font-size: 360rem;
   }
 }
